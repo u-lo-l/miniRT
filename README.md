@@ -1,12 +1,11 @@
 # mini Ray Traicing
 
-![image](./images/1.png)
-![image](./images/2.png)
-![image](./images/3.png)
-![image](./images/4.png)
-![image](./images/5.png)
-![image](./images/6.png)
-
+  <img src="./images/1.png" width="45%"></img>
+  <img src="./images/2.png" width="45%"></img>
+  <img src="./images/3.png" width="45%"></img>
+  <img src="./images/4.png" width="45%"></img>
+  <img src="./images/5.png" width="45%"></img>
+  <img src="./images/6.png" width="45%"></img>
 
 # Implementation
 
