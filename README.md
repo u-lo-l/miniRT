@@ -19,7 +19,7 @@ https://u-lo-l.notion.site/MiniRT-d1d62b4890274dddb36b79dec2c259d3
 ```
 cd bonus
 make
-./miniRT RT_files/[~]/[~.rf]
+./miniRT RT_files/[~]/[~.rt]
 ```
   <img src="./images/1.png" width="45%"></img>
   <img src="./images/2.png" width="45%"></img>
