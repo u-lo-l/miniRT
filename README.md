@@ -19,4 +19,4 @@
   <img src="./images/6.png" width="45%"></img>
 
 ### Demo (x4 faster)
-![1_4X_gif](https://user-images.githubusercontent.com/60467872/216758009-0ec91a3b-5777-41f8-b457-46933f8f2cfb.gif)
+<img src="https://user-images.githubusercontent.com/60467872/216758398-1de48069-85a5-4042-b378-966aba4a3cc7.gif" width="600px"></img>
