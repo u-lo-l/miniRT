@@ -6,6 +6,7 @@ https://u-lo-l.notion.site/MiniRT-d1d62b4890274dddb36b79dec2c259d3
 
 - Phong reflection model (ambient, diffuse, specular)
 - object : plane, quadrics( sphere, cylinder, ellipsoid, .... )
+- light source : spot light
 - camera move, rotate.
 - object translation, rotation, scaling
 - image mapping
