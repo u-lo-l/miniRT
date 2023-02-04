@@ -4,11 +4,14 @@ https://u-lo-l.notion.site/MiniRT-d1d62b4890274dddb36b79dec2c259d3
 
 ### Implementation
 
-- Phong reflection model
+- Phong reflection model (ambient, diffuse, specular)
+- object : plane, quadrics( sphere, cylinder, ellipsoid, .... )
+- camera move, rotate.
+- object translation, rotation, scaling
 - image mapping
 - nomal map
 - Color disruption : checkerboard
-- mirror 
+- mirror reflection
 - multi threading : 4
 
 ### Sample images
