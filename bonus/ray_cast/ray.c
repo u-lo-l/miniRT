@@ -24,7 +24,7 @@
 #include <pthread.h>
 #include "resolution.h"
 #include "scene_editer.h"
-#include "anti.h"
+// #include "anti.h"
 
 static int	is_in_bounding_sphere(const t_ray *R, const t_quadrics *Q)
 {

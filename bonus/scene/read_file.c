@@ -111,6 +111,7 @@ int	scene_init(const char *filename)
 	{
 		free(line);
 		line = get_next_line(fd);
+		printf("line : <%s>\n", line);
 		if (line == NULL)
 			break ;
 		else if (line[0] == '#')

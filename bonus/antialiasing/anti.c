@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "resolution.h"
-#include "anti.h"
+// #include "anti.h"
 #include "mlx_manager.h"
 #include "color.h"
 #include "color.h"

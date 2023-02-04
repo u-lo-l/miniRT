@@ -6,6 +6,7 @@ CFLAGS			=  -Wall -Werror -Wextra  -O3 -mavx2
 #-mavx512f -mavx512dq -mavx512bw -mavx512vbmi -mavx512vbmi2 -mavx512vl
 LIBS = ./library/LIBFT/libft.a
 LIBV = ./library/Libft_vector/libvector.a
+LIBMLX = ./library/mlx/libmlx.a
 MLX = -Llibrary/mlx -lmlx -framework OpenGL -framework AppKit
 
 INCS_DIR		= 	-I ./library/LIBFT \
@@ -20,8 +21,7 @@ INCS_DIR		= 	-I ./library/LIBFT \
 					-I ./quadrics \
 					-I ./scene_editer \
 					-I ./debug_msgs \
-					-I . \
-					-I ./antialiasing \
+					-I .
 
 SRCS_DIR		= 	./ \
 					./ray_cast \
@@ -32,8 +32,7 @@ SRCS_DIR		= 	./ \
 					./timer \
 					./quadrics \
 					./scene_editer \
-					./debug_msgs \
-					./antialiasing \
+					./debug_msgs 
 
 
 SRCS			= 	main.c \
@@ -78,9 +77,7 @@ SRCS			= 	main.c \
 					\
 					debug_quadrics.c \
 					debug_raycast.c \
-					debug_reflection.c \
-					anti.c \
-					sing.c \
+					debug_reflection.c 
 
 OBJS_DIR		= ./OBJS
 OBJS			= $(addprefix $(OBJS_DIR)/, $(notdir $(SRCS:.c=.o)))
@@ -90,7 +87,7 @@ RM				= rm -f
 
 all: $(NAME)
 
-$(NAME): $(OBJS) $(LIBS) $(LIBV)
+$(NAME): $(OBJS) $(LIBS) $(LIBV) $(LIBMLX)
 	$(CC) $(CFLAGS) $(MLX) -lm  $^ -o $@
 
 $(OBJS_DIR)/%.o: %.c | $(OBJS_DIR)
@@ -104,6 +101,8 @@ $(LIBS):
 	$(MAKE) -C ./library/LIBFT all
 ${LIBV} :
 	@make -C ./library/Libft_vector all
+${LIBMLX} :
+	@make -C ./library/mlx all
 
 # clean, fclean, re
 clean :

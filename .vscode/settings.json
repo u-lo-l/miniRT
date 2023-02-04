@@ -83,6 +83,7 @@
         "mlx_keycode.h": "c",
         "transform.h": "c",
         "print_info.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "anti.h": "c"
     }
 }

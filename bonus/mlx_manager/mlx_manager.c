@@ -18,6 +18,7 @@
 #include "ray_cast.h"
 #include "timer.h"
 #include "resolution.h"
+#include "unistd.h"
 
 t_mlx_manager	*get_mlx(void)
 {
@@ -44,7 +45,7 @@ void	init_mlx(char *title_name)
 	mlx->win = mlx_new_window(mlx->mlx, WIN_WIDTH, WIN_HEIGHT, title_name);
 	mlx->image.img = mlx_new_image(mlx->mlx, WIN_WIDTH, WIN_HEIGHT);
 	mlx->image.addr = mlx_get_data_addr(mlx->image.img, &(mlx->image.bpp), \
-								&(mlx->image.line), &(mlx->image.endian));
+								&(mlx->image.line), &(mlx->image.endian));	
 }
 
 int	terminate_mlx(void *null)

@@ -6,7 +6,9 @@ CFLAGS			= -Wall -Werror -Wextra
 
 LIBS = ./library/LIBFT/libft.a
 LIBV = ./library/Libft_vector/libvector.a
+LIBMLX = ./library/mlx/libmlx.a
 MLX = -Llibrary/mlx -lmlx -framework OpenGL -framework AppKit
+# MLX = -Llibrary/mlx -framework OpenGL -framework AppKit
 
 INCS_DIR		= 	-I ./library/LIBFT \
 					-I ./library/mlx \
@@ -71,7 +73,7 @@ RM				= rm -f
 
 all: $(NAME)
 
-$(NAME): $(OBJS) $(LIBS) $(LIBV)
+$(NAME): $(OBJS) $(LIBS) $(LIBV) ${LIBMLX}
 	$(CC) $(CFLAGS) $(MLX) -lm  $^ -o $@
 
 $(OBJS_DIR)/%.o: %.c | $(OBJS_DIR)
@@ -82,9 +84,11 @@ $(OBJS_DIR):
 
 # libft
 $(LIBS):
-	$(MAKE) -C ./library/LIBFT all
+	@make -C ./library/LIBFT all
 ${LIBV} :
 	@make -C ./library/Libft_vector all
+${LIBMLX} :
+	@make -C ./library/mlx all
 
 # clean, fclean, re
 clean :

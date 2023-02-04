@@ -41,11 +41,11 @@ double	get_intersect_distance(t_obj_base *objlst, \
 								t_ray ray)
 {
 	t_obj_base			*target_obj;
-	t_obj_base			*intersect_obj;
+	// t_obj_base			*intersect_obj;
 	double				dist[2];
 
 	dist[0] = INFINITY;
-	intersect_obj = NULL;
+	// intersect_obj = NULL;
 	target_obj = objlst;
 	while (target_obj)
 	{
