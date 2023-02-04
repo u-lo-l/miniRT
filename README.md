@@ -1,4 +1,6 @@
 # Mini raytracing in C
+### Notion (KR)
+https://u-lo-l.notion.site/MiniRT-d1d62b4890274dddb36b79dec2c259d3
 
 ### Implementation
 
