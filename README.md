@@ -16,7 +16,11 @@ https://u-lo-l.notion.site/MiniRT-d1d62b4890274dddb36b79dec2c259d3
 - multi threading : 4
 
 ### Sample images
-
+```
+cd bonus
+make
+./miniRT RT_files/[~]/[~.rf]
+```
   <img src="./images/1.png" width="45%"></img>
   <img src="./images/2.png" width="45%"></img>
   <img src="./images/3.png" width="45%"></img>
