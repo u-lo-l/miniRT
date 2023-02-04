@@ -62,8 +62,8 @@ int	mousedown(int button, int x, int y)
 	t_scene_editer	*editer;
 
 	editer = get_scene_editer();
-	if (x > 0 && y > 0)
-		printf("mouse clicked\n");
+	// if (x > 0 && y > 0)
+		// printf("mouse clicked\n");
 	if (x < 0 || y < 0 || x > WIN_WIDTH || y > WIN_HEIGHT || \
 		(((editer->edit == FALSE) || (editer->target_scene == E_NONE)) \
 		&& (editer->debug == FALSE)))
@@ -91,7 +91,7 @@ int	mouseup(int button, int x, int y)
 	if (x > 0 && y > 0 && button > 0)
 	{
 		get_scene_editer()->clicked = 0;
-		printf("mouse unclicked\n");
+		// printf("mouse unclicked\n");
 	}
 	return (FALSE);
 }
@@ -120,7 +120,7 @@ int	mousemove(int x, int y)
 			mat33_trans(rotation_mat33(axis, -3)));
 	else if (editer->target_scene == E_OBJ && editer->selected_quad != NULL)
 		rotate_quadrics(editer->selected_quad, axis, -3);
-	print_info_camera(get_scene()->cam);
+	// print_info_camera(get_scene()->cam);
 	mlx_renew_image();
 	return (1);
 }
