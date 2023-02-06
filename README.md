@@ -7,6 +7,7 @@ https://u-lo-l.notion.site/MiniRT-d1d62b4890274dddb36b79dec2c259d3
 - Phong reflection model (ambient, diffuse, specular)
 - object : plane, quadrics( sphere, cylinder, ellipsoid, .... )
 - light source : spot light
+- keyboard, mouse input event
 - camera move, rotation.
 - object translation, rotation, scaling
 - image mapping
@@ -16,7 +17,12 @@ https://u-lo-l.notion.site/MiniRT-d1d62b4890274dddb36b79dec2c259d3
 - multi threading : 4
 
 ### Sample images
-
+Works on Mac(intel)
+```
+cd bonus
+make
+./miniRT RT_files/[~]/[~.rt]
+```
   <img src="./images/1.png" width="45%"></img>
   <img src="./images/2.png" width="45%"></img>
   <img src="./images/3.png" width="45%"></img>
