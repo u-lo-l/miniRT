@@ -17,6 +17,7 @@ https://u-lo-l.notion.site/MiniRT-d1d62b4890274dddb36b79dec2c259d3
 - multi threading : 4
 
 ### Sample images
+Works on Mac(intel)
 ```
 cd bonus
 make
